@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes glow {
+    0% { filter: brightness(1) blur(20px); }
+    100% { filter: brightness(1.5) blur(25px); }
+  }
+  
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.1); opacity: 0.6; }
+  }
+  
+  /* Radial gradient utilities */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+  
+  /* Custom opacity values */
+  .opacity-5 { opacity: 0.05; }
+  .opacity-15 { opacity: 0.15; }
+  .opacity-25 { opacity: 0.25; }
+  .opacity-35 { opacity: 0.35; }
+  .opacity-45 { opacity: 0.45; }
+  .opacity-55 { opacity: 0.55; }
+  .opacity-65 { opacity: 0.65; }
+  .opacity-85 { opacity: 0.85; }
+  .opacity-95 { opacity: 0.95; }
+}
+@theme{
+    --color-primary: #F84565;
+    --color-primary-dull: #D63854;
+}
+
+
+*{
+     font-family: "Outfit", sans-serif;
+     scrollbar-width: thin;
+     scrollbar-color: #787777 #1e1e1e;
+}
+
+body{
+    color: white;
+    background-color: #09090B;
+}

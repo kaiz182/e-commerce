@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Nii-Phim - Khám phá thế giới phim ảnh với những bộ phim mới nhất, trailer hot, và nội dung chất lượng cao." />
+    <meta name="keywords" content="Nii-Phim, phim, trailer, phim mới, xem phim, điện ảnh" />
+    <meta name="author" content="Nii-Phim Team" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Nii-Phim - Thế Giới Phim Ảnh" />
+    <meta property="og:description" content="Khám phá hàng loạt phim mới, trailer đỉnh cao tại Nii-Phim." />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    <meta property="og:url" content="https://nii-phim.com" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1a202c" /> <!-- Dark theme color for UI -->
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Preload and Prefetch for Performance -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <title>Cinema- Thế Giới Phim Ảnh</title>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-roboto">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx" defer></script>
+
+    <!-- Fallback for JavaScript disabled -->
+    <noscript>
+      <style>#root { display: none; }</style>
+      <div class="flex items-center justify-center h-screen bg-gray-900 text-white text-center p-4">
+        <h1 class="text-2xl">Cinema-Phim yêu cầu JavaScript để hoạt động.</h1>
+        <p class="mt-2">Vui lòng bật JavaScript trong trình duyệt của bạn để trải nghiệm đầy đủ.</p>
+      </div>
+    </noscript>
+  </body>
+</html>
